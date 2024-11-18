@@ -1,0 +1,191 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portf </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Nashon Kimeu</h1>
+                <h4 class="poppinss">Software Engineer</h4>
+
+
+
+                <a class="btn live poppins" id="hireme" href=""
+                    target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+
+                <img src="{% static 'images/avator.jpg'%}" width="30%" height="30%" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/about.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+
+                    <p class="t-white poppins">I'm Nashon Kimeu, a passionate and driven Software Engineer with a deep enthusiasm for technology and innovation.
+                        My journey in tech has been fueled by a desire to transform ideas into cutting-edge, practical solutions that solve real-world problems.
+                        I specialize in web development, IT support, and the application of artificial intelligence (AI) to create impactful projects.
+                        Having recently completed my degree in Software Engineering, I possess a strong technical foundation in designing and building efficient, user-centric systems that prioritize functionality, scalability, and exceptional user experiences.
+                    Over the course of my academic and professional journey, I have honed my skills in various programming languages and frameworks, including Python, Django, HTML, CSS, JavaScript, and Bootstrap. I am proficient in backend and frontend development, enabling me to deliver full-stack solutions that are both visually appealing and highly functional.
+                        I also have hands-on experience working with databases like SQLite and integrating payment systems such as M-Pesa, which showcase my ability to create comprehensive and modern solutions tailored to business needs.
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/img4.png'%}" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white"> HTML</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">Javascript</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">Python</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">Liberty Children's Home Website</h1>
+                <p class="t-white poppins"> This website was designed  to showcase the mission and work of Liberty Children's Home. Combining user-friendly navigation with a warm and inviting design, the site reflects the home’s dedication to creating a nurturing environment for children. It is my contribution to supporting the incredible efforts of Liberty Children's Home in making a positive impact on young lives..</p>
+                <div class="buttons flex s-around">
+                    <a href=""
+                        target="_blanks" class="btn mx-1 m-top">Site Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+
+                <h1 class="t-white poppins">My Portfolio</h1>
+                <p class="t-white poppins">This portfolio website, crafted using HTML, CSS, and JavaScript, serves as a reflection of my skills and expertise. Designed with a sleek and minimalist aesthetic, it highlights my work by emphasizing clarity and content. The clean and straightforward layout ensures effortless navigation, allowing visitors to seamlessly explore my projects..</p>
+                <div class="buttons flex s-around">
+                    <a href="" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+         </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" >
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="www.linkedin.com/in/nashonkimeu
+
+" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/Kimeunashon" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved 2024 <span class="cpy-white poppins">
+                </span></p>
+
+    </footer>
+
+</body>
+</html>
